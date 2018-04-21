@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_cursos"
+            android:icon="@drawable/ic_launcher"
+            android:title="Map" />
+        <item
+            android:id="@+id/nav_cursadas"
+            android:icon="@drawable/ic_launcher"
+            android:title="Graphic" />
+        <item
+            android:id="@+id/nav_nocursadas"
+            android:icon="@drawable/ic_launcher"
+            android:title="Report" />
+        <item
+            android:id="@+id/nav_progreso"
+            android:icon="@drawable/ic_launcher"
+            android:title="Setting" />
+        <item
+            android:id="@+id/nav_pensum"
+            android:icon="@drawable/ic_launcher"
+            android:title="Exit" />
+        <!-- <item
+               android:id="@+id/nav_transacciones"
+               android:icon="@drawable/ic_menu_slideshow"
+               android:title="Transacciones" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_abonos"-->
+            <!--android:icon="@drawable/ic_menu_send"-->
+            <!--android:title="Abonos" />-->
+
+        <!--<item-->
+            <!--android:id="@+id/nav_configuraciones"-->
+            <!--android:icon="@drawable/ic_menu_send"-->
+            <!--android:title="Configuración" />-->
+
+        <!--<item-->
+            <!--android:id="@+id/nav_contacto"-->
+            <!--android:icon="@drawable/ic_menu_share"-->
+            <!--android:title="Contacto" />-->
+
+        <!--<item-->
+            <!--android:id="@+id/nav_salir"-->
+            <!--android:icon="@drawable/ic_menu_send"-->
+            <!--android:title="Salir" />-->
+
+         <!--<item
+            android:id="@+id/nav_ayuda"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Ayuda" />-->
+       <!-- <item
+        android:id="@+id/nav_configuraciones"
+        android:icon="@drawable/ic_launcher"
+        android:title="Configuración" />
+
+        <item
+            android:id="@+id/nav_salir"
+            android:icon="@drawable/ic_launcher"
+            android:title="Salir" />-->
+    </group>
+
+    <!--<item android:title="Contactanos en:"/>-->
+    <!--<item android:title="829-742-6113">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_configuraciones"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Configuración" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_salir"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Salir" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>

@@ -1,0 +1,113 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 08/11/2016 12:31
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-book:before { content: "\f100"; }
+.flaticon-compass:before { content: "\f101"; }
+.flaticon-direction:before { content: "\f102"; }
+.flaticon-direction-1:before { content: "\f103"; }
+.flaticon-directional:before { content: "\f104"; }
+.flaticon-distance:before { content: "\f105"; }
+.flaticon-earth-globe:before { content: "\f106"; }
+.flaticon-geolocalization:before { content: "\f107"; }
+.flaticon-global:before { content: "\f108"; }
+.flaticon-locations:before { content: "\f109"; }
+.flaticon-map:before { content: "\f10a"; }
+.flaticon-map-1:before { content: "\f10b"; }
+.flaticon-map-2:before { content: "\f10c"; }
+.flaticon-map-3:before { content: "\f10d"; }
+.flaticon-placeholder:before { content: "\f10e"; }
+.flaticon-placeholder-1:before { content: "\f10f"; }
+.flaticon-placeholder-2:before { content: "\f110"; }
+.flaticon-placeholder-3:before { content: "\f111"; }
+.flaticon-placeholder-4:before { content: "\f112"; }
+.flaticon-placeholder-5:before { content: "\f113"; }
+.flaticon-placeholder-6:before { content: "\f114"; }
+.flaticon-position:before { content: "\f115"; }
+.flaticon-position-1:before { content: "\f116"; }
+.flaticon-position-2:before { content: "\f117"; }
+.flaticon-position-3:before { content: "\f118"; }
+.flaticon-position-4:before { content: "\f119"; }
+.flaticon-route:before { content: "\f11a"; }
+.flaticon-satellite-dish:before { content: "\f11b"; }
+.flaticon-signpost:before { content: "\f11c"; }
+.flaticon-street-map:before { content: "\f11d"; }
+.flaticon-street-map-1:before { content: "\f11e"; }
+.flaticon-street-map-2:before { content: "\f11f"; }
+.flaticon-target:before { content: "\f120"; }
+.flaticon-target-1:before { content: "\f121"; }
+.flaticon-target-2:before { content: "\f122"; }
+.flaticon-wind-rose:before { content: "\f123"; }
+.flaticon-worldwide:before { content: "\f124"; }
+    
+    $font-Flaticon-book: "\f100";
+    $font-Flaticon-compass: "\f101";
+    $font-Flaticon-direction: "\f102";
+    $font-Flaticon-direction-1: "\f103";
+    $font-Flaticon-directional: "\f104";
+    $font-Flaticon-distance: "\f105";
+    $font-Flaticon-earth-globe: "\f106";
+    $font-Flaticon-geolocalization: "\f107";
+    $font-Flaticon-global: "\f108";
+    $font-Flaticon-locations: "\f109";
+    $font-Flaticon-map: "\f10a";
+    $font-Flaticon-map-1: "\f10b";
+    $font-Flaticon-map-2: "\f10c";
+    $font-Flaticon-map-3: "\f10d";
+    $font-Flaticon-placeholder: "\f10e";
+    $font-Flaticon-placeholder-1: "\f10f";
+    $font-Flaticon-placeholder-2: "\f110";
+    $font-Flaticon-placeholder-3: "\f111";
+    $font-Flaticon-placeholder-4: "\f112";
+    $font-Flaticon-placeholder-5: "\f113";
+    $font-Flaticon-placeholder-6: "\f114";
+    $font-Flaticon-position: "\f115";
+    $font-Flaticon-position-1: "\f116";
+    $font-Flaticon-position-2: "\f117";
+    $font-Flaticon-position-3: "\f118";
+    $font-Flaticon-position-4: "\f119";
+    $font-Flaticon-route: "\f11a";
+    $font-Flaticon-satellite-dish: "\f11b";
+    $font-Flaticon-signpost: "\f11c";
+    $font-Flaticon-street-map: "\f11d";
+    $font-Flaticon-street-map-1: "\f11e";
+    $font-Flaticon-street-map-2: "\f11f";
+    $font-Flaticon-target: "\f120";
+    $font-Flaticon-target-1: "\f121";
+    $font-Flaticon-target-2: "\f122";
+    $font-Flaticon-wind-rose: "\f123";
+    $font-Flaticon-worldwide: "\f124";
