@@ -19,9 +19,6 @@ import com.xxmassdeveloper.mpchartexample.Cliente.ClienteService;
 import com.xxmassdeveloper.mpchartexample.MainActivity;
 import com.xxmassdeveloper.mpchartexample.R;
 
-import com.xxmassdeveloper.mpchartexample.LineChartActivity1;
-import com.xxmassdeveloper.mpchartexample.LineChartActivity2;
-
 import retrofit.Callback;
 import retrofit.RestAdapter;
 import retrofit.RetrofitError;

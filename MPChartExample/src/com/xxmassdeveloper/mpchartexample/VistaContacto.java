@@ -251,12 +251,12 @@ public class VistaContacto extends Fragment implements SeekBar.OnSeekBarChangeLi
         });
 //        ===================> CONSULTAR SENSORES  <================| END |===
 
-//        for (int i=0;i<2;i++){
-//            yAxes1.add(new Entry(i, random.nextFloat()));
-//            yAxes2.add(new Entry(i, random.nextFloat()));
-//            yAxes3.add(new Entry(i, random.nextFloat()));
-//            yAxes4.add(new Entry(i, random.nextFloat()));
-//        }
+        for (int i=0;i<2;i++){
+            yAxes1.add(new Entry(i, random.nextFloat()));
+            yAxes2.add(new Entry(i, random.nextFloat()));
+            yAxes3.add(new Entry(i, random.nextFloat()));
+            yAxes4.add(new Entry(i, random.nextFloat()));
+        }
 
         LineDataSet lineDataSet1 = new LineDataSet(yAxes1, "Humedad");
         lineDataSet1.setColor(Color.BLUE);

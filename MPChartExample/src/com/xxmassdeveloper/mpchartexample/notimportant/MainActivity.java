@@ -14,37 +14,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
 import com.github.mikephil.charting.utils.Utils;
-import com.xxmassdeveloper.mpchartexample.AnotherBarActivity;
-import com.xxmassdeveloper.mpchartexample.BarChartActivity;
-import com.xxmassdeveloper.mpchartexample.BarChartActivityMultiDataset;
-import com.xxmassdeveloper.mpchartexample.BarChartActivitySinus;
-import com.xxmassdeveloper.mpchartexample.BarChartPositiveNegative;
-import com.xxmassdeveloper.mpchartexample.BubbleChartActivity;
-import com.xxmassdeveloper.mpchartexample.CandleStickChartActivity;
-import com.xxmassdeveloper.mpchartexample.CombinedChartActivity;
-import com.xxmassdeveloper.mpchartexample.CubicLineChartActivity;
-import com.xxmassdeveloper.mpchartexample.DynamicalAddingActivity;
-import com.xxmassdeveloper.mpchartexample.FilledLineActivity;
-import com.xxmassdeveloper.mpchartexample.HalfPieChartActivity;
-import com.xxmassdeveloper.mpchartexample.HorizontalBarChartActivity;
-import com.xxmassdeveloper.mpchartexample.InvertedLineChartActivity;
-import com.xxmassdeveloper.mpchartexample.LineChartActivity1;
-import com.xxmassdeveloper.mpchartexample.LineChartActivity2;
-import com.xxmassdeveloper.mpchartexample.LineChartActivityColored;
-import com.xxmassdeveloper.mpchartexample.LineChartTime;
-import com.xxmassdeveloper.mpchartexample.ListViewBarChartActivity;
-import com.xxmassdeveloper.mpchartexample.ListViewMultiChartActivity;
-import com.xxmassdeveloper.mpchartexample.MultiLineChartActivity;
-import com.xxmassdeveloper.mpchartexample.PerformanceLineChart;
-import com.xxmassdeveloper.mpchartexample.PieChartActivity;
-import com.xxmassdeveloper.mpchartexample.PiePolylineChartActivity;
 import com.xxmassdeveloper.mpchartexample.R;
-import com.xxmassdeveloper.mpchartexample.RadarChartActivitry;
-import com.xxmassdeveloper.mpchartexample.RealtimeLineChartActivity;
-import com.xxmassdeveloper.mpchartexample.ScatterChartActivity;
-import com.xxmassdeveloper.mpchartexample.ScrollViewActivity;
-import com.xxmassdeveloper.mpchartexample.StackedBarActivity;
-import com.xxmassdeveloper.mpchartexample.StackedBarActivityNegative;
 import com.xxmassdeveloper.mpchartexample.fragments.SimpleChartDemo;
 import com.xxmassdeveloper.mpchartexample.realm.RealmMainActivity;
 
@@ -162,134 +132,17 @@ public class MainActivity extends Activity implements OnItemClickListener {
         Intent i;
 
         switch (pos) {
-            case 0:
-                i = new Intent(this, LineChartActivity1.class);
-                startActivity(i);
-                break;
-            case 1:
-                i = new Intent(this, LineChartActivity2.class);
-                startActivity(i);
-                break;
-            case 2:
-                i = new Intent(this, BarChartActivity.class);
-                startActivity(i);
-                break;
-            case 3:
-                i = new Intent(this, HorizontalBarChartActivity.class);
-                startActivity(i);
-                break;
-            case 4:
-                i = new Intent(this, CombinedChartActivity.class);
-                startActivity(i);
-                break;
-            case 5:
-                i = new Intent(this, PieChartActivity.class);
-                startActivity(i);
-                break;
-            case 6:
-                i = new Intent(this, PiePolylineChartActivity.class);
-                startActivity(i);
-                break;
-            case 7:
-                i = new Intent(this, ScatterChartActivity.class);
-                startActivity(i);
-                break;
-            case 8:
-                i = new Intent(this, BubbleChartActivity.class);
-                startActivity(i);
-                break;
-            case 9:
-                i = new Intent(this, StackedBarActivity.class);
-                startActivity(i);
-                break;
-            case 10:
-                i = new Intent(this, StackedBarActivityNegative.class);
-                startActivity(i);
-                break;
-            case 11:
-                i = new Intent(this, AnotherBarActivity.class);
-                startActivity(i);
-                break;
-            case 12:
-                i = new Intent(this, MultiLineChartActivity.class);
-                startActivity(i);
-                break;
-            case 13:
-                i = new Intent(this, BarChartActivityMultiDataset.class);
-                startActivity(i);
-                break;
+
             case 14:
                 i = new Intent(this, SimpleChartDemo.class);
                 startActivity(i);
                 break;
-            case 15:
-                i = new Intent(this, ListViewBarChartActivity.class);
-                startActivity(i);
-                break;
-            case 16:
-                i = new Intent(this, ListViewMultiChartActivity.class);
-                startActivity(i);
-                break;
-            case 17:
-                i = new Intent(this, InvertedLineChartActivity.class);
-                startActivity(i);
-                break;
-            case 18:
-                i = new Intent(this, CandleStickChartActivity.class);
-                startActivity(i);
-                break;
-            case 19:
-                i = new Intent(this, CubicLineChartActivity.class);
-                startActivity(i);
-                break;
-            case 20:
-                i = new Intent(this, RadarChartActivitry.class);
-                startActivity(i);
-                break;
-            case 21:
-                i = new Intent(this, LineChartActivityColored.class);
-                startActivity(i);
-                break;
-            case 22:
-                i = new Intent(this, RealtimeLineChartActivity.class);
-                startActivity(i);
-                break;
-            case 23:
-                i = new Intent(this, DynamicalAddingActivity.class);
-                startActivity(i);
-                break;
-            case 24:
-                i = new Intent(this, PerformanceLineChart.class);
-                startActivity(i);
-                break;
-            case 25:
-                i = new Intent(this, BarChartActivitySinus.class);
-                startActivity(i);
-                break;
-            case 26:
-                i = new Intent(this, ScrollViewActivity.class);
-                startActivity(i);
-                break;
-            case 27:
-                i = new Intent(this, BarChartPositiveNegative.class);
-                startActivity(i);
-                break;
+
             case 28:
                 i = new Intent(this, RealmMainActivity.class);
                 startActivity(i);
                 break;
-            case 29:
-                i = new Intent(this, LineChartTime.class);
-                startActivity(i);
-                break;
-            case 30:
-                i = new Intent(this, FilledLineActivity.class);
-                startActivity(i);
-                break;
-            case 31:
-                i = new Intent(this, HalfPieChartActivity.class);
-                startActivity(i);
-                break;
+
 
         }
 
