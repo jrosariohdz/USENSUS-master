@@ -1,10 +1,10 @@
 package com.xxmassdeveloper.mpchartexample;
 
+import android.app.Activity;
 import android.app.FragmentManager;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 
@@ -19,6 +19,7 @@ import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.xxmassdeveloper.mpchartexample.Login.Login;
 
 
 public class MainActivity extends AppCompatActivity
@@ -153,18 +154,20 @@ public class MainActivity extends AppCompatActivity
             item.setCheckable(true);
 //            trans= true;
             overridePendingTransition(R.anim.move_right_in_activity, R.anim.move_left_out_activity);
-        } else if (id == R.id.nav_pensum) {
+        } else if (id == R.id.nav_settings) {
             vista = new VistaContacto();
             trans= true;
             overridePendingTransition(R.anim.move_right_in_activity, R.anim.move_left_out_activity);
-        }else if (id == R.id.nav_nocursadas) {
+        }else if (id == R.id.nav_report) {
             vista = new VistaReporte();
             trans= true;
             overridePendingTransition(R.anim.move_right_in_activity, R.anim.move_left_out_activity);
-        }else if (id == R.id.nav_cursadas) {
-            vista = new VistaContacto();
-            trans= true;
-            overridePendingTransition(R.anim.move_right_in_activity, R.anim.move_left_out_activity);
+        }else if (id == R.id.nav_exit) {
+            Intent exit = new Intent( MainActivity.this , Login.class);
+            startActivity(exit);
+//            vista = new VistaContacto();
+//            trans= true;
+//            overridePendingTransition(R.anim.move_right_in_activity, R.anim.move_left_out_activity);
         }
 
 

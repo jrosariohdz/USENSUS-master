@@ -11,15 +11,15 @@
             android:icon="@drawable/ic_launcher"
             android:title="Graphic" />
         <item
-            android:id="@+id/nav_nocursadas"
+            android:id="@+id/nav_report"
             android:icon="@drawable/ic_launcher"
             android:title="Report" />
         <item
-            android:id="@+id/nav_progreso"
+            android:id="@+id/nav_settings"
             android:icon="@drawable/ic_launcher"
             android:title="Setting" />
         <item
-            android:id="@+id/nav_pensum"
+            android:id="@+id/nav_exit"
             android:icon="@drawable/ic_launcher"
             android:title="Exit" />
         <!-- <item

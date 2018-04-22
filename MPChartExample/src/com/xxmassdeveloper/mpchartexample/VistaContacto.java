@@ -59,7 +59,7 @@ public class VistaContacto extends Fragment implements SeekBar.OnSeekBarChangeLi
     private ArrayList<ILineDataSet> lineDataSets3;
     private LineChart mChart;
     private Spinner spinner;
-
+    Global servidor = new Global();
     public VistaContacto() {
 
     }
@@ -122,7 +122,7 @@ public class VistaContacto extends Fragment implements SeekBar.OnSeekBarChangeLi
         items.add("RED local");
 
         //===================> CONSULTAR REDES <===================
-        RestAdapter restadpter = new RestAdapter.Builder().setEndpoint("http://10.0.0.9/").build();
+        RestAdapter restadpter = servidor.getRestadpter();
         RedService servicio = restadpter.create(RedService.class);
         servicio.getRedes(new retrofit.Callback<List<Red>>() {
             @Override
@@ -223,7 +223,7 @@ public class VistaContacto extends Fragment implements SeekBar.OnSeekBarChangeLi
         final Random random = new Random();
 
         // ===================> CONSULTAR SENSORES <===================
-        RestAdapter restadpter = new RestAdapter.Builder().setEndpoint("http://10.0.0.9/").build();
+        RestAdapter restadpter = servidor.getRestadpter();
         SensorService servicio = restadpter.create(SensorService.class);
 
         servicio.getSensores(new retrofit.Callback<List<Sensor>>() {

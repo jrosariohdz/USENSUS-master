@@ -39,7 +39,7 @@ public class VistaReporte extends Fragment implements android.app.DatePickerDial
     private RadioButton porDia, porSemana, porFecha;
     private Spinner spinner;
     private TextView pro_temp,pro_humedad,pro_sonido,pro_rayos,pro_monoxido;
-
+    Global servidor = new Global();
     public VistaReporte() {
 
     }
@@ -56,7 +56,7 @@ public class VistaReporte extends Fragment implements android.app.DatePickerDial
         items.add("RED local");
 
         //===================> CONSULTAR REDES <===================
-        RestAdapter restadpter = new RestAdapter.Builder().setEndpoint("http://linksdominicana.com/").build();
+        RestAdapter restadpter = servidor.getRestadpter();
         RedService servicio = restadpter.create(RedService.class);
         servicio.getRedes(new retrofit.Callback<List<Red>>() {
             @Override
@@ -132,7 +132,7 @@ public class VistaReporte extends Fragment implements android.app.DatePickerDial
     }
     private void Reportar(int id_modulo){
 //            ===================> CONSULTAR REPORTE PROMEDIO HOY <===================
-        RestAdapter restadpter = new RestAdapter.Builder().setEndpoint("http://linksdominicana.com/").build();
+        RestAdapter restadpter = servidor.getRestadpter();
         SensorService servicio = restadpter.create(SensorService.class);
 
         servicio.getReporteSensorHoy(id_modulo,new Callback<ReportProHoy>() {

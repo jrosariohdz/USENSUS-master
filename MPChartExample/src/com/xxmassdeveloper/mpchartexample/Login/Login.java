@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import com.xxmassdeveloper.mpchartexample.Cliente.Cliente;
 import com.xxmassdeveloper.mpchartexample.Cliente.ClienteService;
+import com.xxmassdeveloper.mpchartexample.Global;
 import com.xxmassdeveloper.mpchartexample.MainActivity;
 import com.xxmassdeveloper.mpchartexample.R;
 
@@ -34,6 +35,8 @@ public class Login extends AppCompatActivity {
     Button iniciar;
     String name_user;
     String pass_user;
+
+    Global servidor = new Global();
 
     @Override
     public void onBackPressed() {
@@ -84,7 +87,7 @@ public class Login extends AppCompatActivity {
                         pb.setVisibility(View.VISIBLE);//HACEMOS VISIBLE EL PROGRESSBAR PARA INDICAR QUE SE ESTA CARGANDO
 
                         //SE SOLICITA UN ADATER EL CUAL ES EL ENCARGADO DE LA CONEXION DESDE LA APLICACION
-                        RestAdapter restadpter = new RestAdapter.Builder().setEndpoint("http://10.0.0.9/").build();
+                        RestAdapter restadpter = servidor.getRestadpter();
                         ClienteService servicio = restadpter.create(ClienteService.class);//SE INICIA UN NUEVO SERVICIO EN ESTE CASO DE TIPO CLIENTE
 
 

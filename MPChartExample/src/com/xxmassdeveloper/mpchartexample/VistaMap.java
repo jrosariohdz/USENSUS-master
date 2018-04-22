@@ -36,6 +36,7 @@ import retrofit.client.Response;
 public class VistaMap extends Fragment implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+    Global servidor = new Global();
     public VistaMap() {
 
     }
@@ -51,7 +52,7 @@ public class VistaMap extends Fragment implements OnMapReadyCallback {
         lvresult = (ListView)v.findViewById(R.id.lvModulos);
 
 
-        RestAdapter restadpter = new RestAdapter.Builder().setEndpoint("http://linksdominicana.com").build();
+        RestAdapter restadpter = servidor.getRestadpter();
         ModuloService servicio = restadpter.create(ModuloService.class);
 
         servicio.getModulos(1, new Callback<List<Modulo>>() {
