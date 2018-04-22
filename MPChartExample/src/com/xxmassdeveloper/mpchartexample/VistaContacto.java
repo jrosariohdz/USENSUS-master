@@ -210,7 +210,7 @@ public class VistaContacto extends Fragment implements SeekBar.OnSeekBarChangeLi
                 mChart.invalidate();
             }
         });
-        return view;
+        return view; 
 
     }
 
